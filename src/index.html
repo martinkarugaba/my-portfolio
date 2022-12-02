@@ -13,20 +13,21 @@
   <body class="font-poppins">
     <!--* navbar -->
     <nav
-      class="h-14 w-full px-2 py-4 bg-slate-200 flex justify-between items-center"
+      class="h-14 w-full px-5 py-4 bg-slate-50 flex justify-between items-center"
     >
+      <!--* logo -->
       <div
-        class="text-light-blue text-lg font-medium flex flex-col justify-between items-start cursor-pointer"
+        class="text-light-blue leading-3 gap-y-0 flex flex-col justify-between items-start cursor-pointer font-semibold"
       >
-        <p class="leading-5">Martin</p>
-        <p class="leading-5">Karugaba</p>
+        <p class="text-2xl">Martin</p>
+        <p class="-mt-[10px] text-2xl">Karugaba</p>
       </div>
 
       <!--* nav links -->
       <div
-        class="w-[30px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer"
+        class="w-[26px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer"
       >
-        <!--* bars -->
+        <!--* hamburger -->
         <div class="h-[3px] w-[100%] bg-light-blue rounded-sm"></div>
         <div
           class="h-[3px] w-[100%] bg-light-blue my-[6px] rounded-sm"
@@ -37,36 +38,54 @@
     <!--* end navbar -->
 
     <!--* header -->
-    <section>
-      <h1 class="text-dark-blue font-medium">
-        I'm Martin Karugaba glad to see you!
+    <section
+      class="h-[90vh] bg-hero-shapes bg-cover flex flex-col justify-center gap-y-4 items-start px-5"
+    >
+      <h1 class="text-dark-blue font-bold text-[40px] leading-11">
+        I'm Martin Karugaba <br />
+        Glad to see you!
       </h1>
-      <p>
+      <p class="text-base leading-7 text-light-teal">
         I’m a software developer! I can help you build a product ,
         feature or website Look through some of my work and
         experience! If you like what you see and have a project you
         need coded, don’t hestiate to contact me.
       </p>
 
-      <h2>Let's connect'</h2>
-
-      <!--* icons -->
       <div>
-        <img
-          class="h-[30px] w-[30px]"
-          src="./img/twitter.png"
-          alt="twitter icon"
-        />
-        <img
-          class="h-[30px] w-[30px]"
-          src="./img/linkedin.png"
-          alt="linkedin icon"
-        />
-        <img
-          class="h-[30px] w-[30px]"
-          src="./img/github.png"
-          alt="github icon"
-        />
+        <h2 class="uppercase text-4xl text-h2 font-medium">Let's connect</h2>
+
+        <!--* icons -->
+        <div class="flex justify-between items-center gap-y-4 mt-2">
+          <!--* twitter icon -->
+          <a href="https://twitter.com/martin_karugaba">
+            <img
+              class="h-[20px] w-[20px]"
+              src="./img/twitter.png"
+              alt="twitter icon"
+            />
+          </a>
+
+          <!--* linkedin icon -->
+          <a
+            href="https://www.linkedin.com/in/martin-karugaba-822442173/"
+          >
+            <img
+              class="h-[20px] w-[20px]"
+              src="./img/linkedin.png"
+              alt="linkedin icon"
+            />
+          </a>
+
+          <!--* github icon -->
+          <a href="https://github.com/martinkarugaba">
+            <img
+              class="h-[20px] w-[20px]"
+              src="./img/github.png"
+              alt="github icon"
+            />
+          </a>
+        </div>
       </div>
     </section>
     <!--* end header -->
