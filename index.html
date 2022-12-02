@@ -12,38 +12,43 @@
   </head>
   <body class="font-poppins">
     <!--* navbar -->
-    <nav
-      class="h-14 w-full px-5 py-4 bg-slate-50 flex justify-between items-center"
-    >
-      <!--* logo -->
-      <div
-        class="text-light-blue leading-3 gap-y-0 flex flex-col justify-between items-start cursor-pointer font-semibold"
+    <header>
+      <nav
+        class="h-14 w-full px-5 py-4 bg-slate-50 flex justify-between items-center"
       >
-        <p class="text-2xl">Martin</p>
-        <p class="-mt-[10px] text-2xl">Karugaba</p>
-      </div>
-
-      <!--* nav links -->
-      <div
-        class="w-[26px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer"
-      >
-        <!--* hamburger -->
-        <div class="h-[3px] w-[100%] bg-light-blue rounded-sm"></div>
+        <!--* logo -->
         <div
-          class="h-[3px] w-[100%] bg-light-blue my-[6px] rounded-sm"
-        ></div>
-        <div class="h-[3px] w-[100%] bg-light-blue rounded-sm"></div>
-      </div>
-    </nav>
+          class="text-light-blue leading-3 gap-y-0 flex flex-col justify-between items-start cursor-pointer font-semibold"
+        >
+          <p class="text-2xl">My Logo</p>
+        </div>
+
+        <!--* nav links -->
+        <div
+          class="w-[26px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer"
+        >
+          <!--* hamburger -->
+          <div
+            class="h-[3px] w-[100%] bg-light-blue rounded-sm"
+          ></div>
+          <div
+            class="h-[3px] w-[100%] bg-light-blue my-[6px] rounded-sm"
+          ></div>
+          <div
+            class="h-[3px] w-[100%] bg-light-blue rounded-sm"
+          ></div>
+        </div>
+      </nav>
+    </header>
     <!--* end navbar -->
 
     <!--* header -->
     <section
-      class="h-[90vh] bg-hero-shapes bg-cover flex flex-col justify-center gap-y-4 items-start px-5"
+      class="h-[600px] bg-hero-shapes bg-cover flex flex-col justify-center gap-y-4 items-start px-5"
     >
       <h1 class="text-dark-blue font-bold text-[40px] leading-11">
-        I'm Martin Karugaba <br />
-        Glad to see you!
+        I'm Mariane <br />
+        Glad to see <br> you!
       </h1>
       <p class="text-base leading-7 text-light-teal">
         I’m a software developer! I can help you build a product ,
@@ -53,14 +58,16 @@
       </p>
 
       <div>
-        <h2 class="uppercase text-4xl text-h2 font-medium">Let's connect</h2>
+        <h2 class="uppercase text-4xl text-h2 font-medium">
+          Let's connect
+        </h2>
 
-        <!--* icons -->
-        <div class="flex justify-between items-center gap-y-4 mt-2">
+        <!--* icons container-->
+        <div class="flex justify-between items-center gap-x-6 mt-2">
           <!--* twitter icon -->
           <a href="https://twitter.com/martin_karugaba">
             <img
-              class="h-[20px] w-[20px]"
+              class="h-[20px] w-[20px] object-contain"
               src="./img/twitter.png"
               alt="twitter icon"
             />
@@ -71,24 +78,41 @@
             href="https://www.linkedin.com/in/martin-karugaba-822442173/"
           >
             <img
-              class="h-[20px] w-[20px]"
+              class="h-[20px] w-[20px] object-contain"
               src="./img/linkedin.png"
               alt="linkedin icon"
+            />
+          </a>
+
+          <!--* icon -->
+          <a href="#">
+            <img
+              class="h-[20px] w-[20px] object-contain"
+              src="./img/mastodon.png"
+              alt="m-icon"
             />
           </a>
 
           <!--* github icon -->
           <a href="https://github.com/martinkarugaba">
             <img
-              class="h-[20px] w-[20px]"
+              class="h-[20px] w-[20px] object-contain"
               src="./img/github.png"
               alt="github icon"
+            />
+          </a>
+
+          <!--* icon -->
+          <a href="#">
+            <img
+              class="h-[20px] w-[20px] object-contain"
+              src="./img/peace.png"
+              alt="peace icon"
             />
           </a>
         </div>
       </div>
     </section>
     <!--* end header -->
-
   </body>
 </html>
