@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html,js}'],
+  content: ['./index.html'],
   theme: {
     extend: {
       colors: {
@@ -14,7 +14,7 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
     backgroundImage: {
-      'hero-shapes': "url('/src/img/header-shapes-mobile.png')",
+      'hero-shapes': "url('/img/header-shapes-mobile.png')",
     },
     fontSize: {
       40: '40px',
@@ -22,7 +22,7 @@ module.exports = {
     lineHeight: {
       11: '50px',
       12: '60px',
-      10:'10px'
+      10: '10px',
     },
   },
   plugins: [],
