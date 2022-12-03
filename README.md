@@ -24,6 +24,8 @@ REQUIRED SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
+git branch --set-upstream-to=origin/<branch> add-more-sections
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
