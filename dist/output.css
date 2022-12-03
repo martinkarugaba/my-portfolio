@@ -676,6 +676,14 @@ video {
   width: 230px;
 }
 
+.w-\[2px\]{
+  width: 2px;
+}
+
+.w-\[250\=px\]{
+  width: 250=px;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
