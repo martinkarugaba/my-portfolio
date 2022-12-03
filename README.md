@@ -50,9 +50,8 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [my-portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[my portfolio]** is a project that displays the projects that I have previously worked on.
 
@@ -68,9 +67,9 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Styling</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+    <li><a href="https://tailwindcss.com/docs/installation">tailwindcss</a></a></li>
   </ul>
 </details>
 
@@ -168,6 +167,11 @@ Feel free to check the [issues page](../../issues/).
 > Github iicon from
 > <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
 
+> Arrow down on the languages section is from
+> <a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons created by Arkinasi - Flaticon</a>
+
+> Arrow forward on the la<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a>nguages section is from
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
@@ -179,7 +183,6 @@ Feel free to check the [issues page](../../issues/).
 - **[What is tailwind css?]**
 
   - [Learn tailwidcss here](https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -4,9 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'primary-blue': '#396DF2',
         'light-blue': '#6070FF',
         'dark-blue': '#172B4D',
+        'light-dark-blue': '#344563',
+        'faded-blue': '#EBEBFF',
         'light-teal': '#344563',
+        'light-grey': '#C1C7D0',
+        'light-grey-2': '#DFE1E6',
+        'light-grey-3': '#E5E5E5',
+        'light-grey-4': '#7A869A',
+        'light-grey-5': '#F7F7F9',
+        'medium-grey': '#7A869A',
         h2: '#7F8CFF',
       },
     },
@@ -17,7 +26,7 @@ module.exports = {
       'hero-shapes': "url('/img/header-shapes-mobile.png')",
     },
     fontSize: {
-      40: '40px',
+      small: '13px',
     },
     lineHeight: {
       11: '50px',
