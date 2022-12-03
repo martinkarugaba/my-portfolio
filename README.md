@@ -50,9 +50,8 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [my-portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[my portfolio]** is a project that displays the projects that I have previously worked on.
 
@@ -68,9 +67,9 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Styling</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+    <li><a href="https://tailwindcss.com/docs/installation">tailwindcss</a></a></li>
   </ul>
 </details>
 
