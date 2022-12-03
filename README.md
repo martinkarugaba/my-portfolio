@@ -24,8 +24,6 @@ REQUIRED SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-git branch --set-upstream-to=origin/<branch> add-more-sections
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -170,6 +168,11 @@ Feel free to check the [issues page](../../issues/).
 > Github iicon from
 > <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
 
+> Arrow down on the languages section is from
+> <a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons created by Arkinasi - Flaticon</a>
+
+> Arrow forward on the la<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a>nguages section is from
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
@@ -181,7 +184,6 @@ Feel free to check the [issues page](../../issues/).
 - **[What is tailwind css?]**
 
   - [Learn tailwidcss here](https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
