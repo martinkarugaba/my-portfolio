@@ -27,7 +27,7 @@ module.exports = {
       'hero-shapes': "url('/img/header-shapes-mobile.png')",
       'mobile-footer-shapes':
         "url('/img/footer/contact form shapes-mobile@2x.png')",
-      'desktop-header-bg': '/img/desktop/Header bg@2x.png',
+      'desktop-header': "url('/img/desktop/Header-bg.png')",
     },
     fontSize: {
       small: '13px',
