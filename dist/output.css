@@ -1453,3 +1453,9 @@ video {
   --tw-content: 'h';
   content: var(--tw-content);
 }
+
+@media (min-width: 768px){
+  .md\:hidden{
+    display: none;
+  }
+}
