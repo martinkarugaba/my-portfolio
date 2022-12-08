@@ -595,20 +595,24 @@
     <!--* END ABOUT MYSELF -->
 
     <!--* footer -->
-    <footer class="bg-light-blue px-5 py-32">
+    <footer class="flex flex-col justify-between items-center bg-light-blue w-full overflow-hidden  px-5 rounded-tl-[90px] before:content-[''] before:h-[700px] before:w-[65%] before:bg-mobile-footer-shapes before:bg-contain before:-z-1 before:absolute before:left-[35%] before:bg-right before:bg-no-repeat before:mt-5">
       <!--*header -->
-      <header>
-        <h2 class="text-white text-center text-[2.5rem] font-bold">Contact me</h2>
-        <p class="text-light-white text-center font-normal text-[1.25rem]">
-          If you have an application you are interested in developing, a
-          feature that you need built or a project that needs coding.
-          I’d love to help with it
+      <header class="mt-[100px]">
+        <h2 class="text-white text-center text-[2.5rem] font-bold">
+          Contact me
+        </h2>
+        <p
+          class="text-light-white text-center font-normal text-[1.25rem]"
+        >
+          If you have an application you are interested in developing,
+          a feature that you need built or a project that needs
+          coding. I’d love to help with it
         </p>
       </header>
       <!--* form -->
       <form
         action=""
-        class="flex flex-col justify-center items-start gap-y-7 mt-8 w-full"
+        class="flex flex-col justify-center items-start gap-y-4 mt-8 mb-8 w-full "
       >
         <!--* name -->
         <div class="w-full">
@@ -619,7 +623,7 @@
             placeholder="Martin Karugaba"
             id="name"
             maxlength="30"
-            name="user_name"
+            name="name"
           />
         </div>
         <!--* email -->
@@ -630,22 +634,31 @@
             class="text-base p-2 px-4 w-full rounded-lg"
             placeholder="martin@email.com"
             id="mail"
-            name="user_email"
+            name="email"
           />
         </div>
         <!--* text-area -->
         <div class="w-full">
           <textarea
-            name=""
-            id=""
+            name="message"
+            id="message"
             required
             maxlength="500"
             placeholder="Write your message here"
             class="text-base p-2 px-4 rounded-lg h-[170px] w-full"
           ></textarea>
         </div>
-        <div><button class="text-light-blue p-4 bg-white rounded-lg" type="submit">Get in touch</button></div>
+        <!--* submit -->
+        <div>
+          <button
+            class="text-light-blue p-4 bg-white rounded-lg"
+            type="submit"
+          >
+            Get in touch
+          </button>
+        </div>
       </form>
+      <div class="w-[134px] h-[5px] rounded-[2px] bg-[#0D151E] mb-[8px] self-center"></div>
       <!--* end form -->
     </footer>
     <!--* footer -->

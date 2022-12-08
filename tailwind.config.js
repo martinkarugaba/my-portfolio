@@ -25,6 +25,8 @@ module.exports = {
     },
     backgroundImage: {
       'hero-shapes': "url('/img/header-shapes-mobile.png')",
+      'mobile-footer-shapes':
+        "url('/img/footer/contact form shapes-mobile@2x.png')",
     },
     fontSize: {
       small: '13px',
