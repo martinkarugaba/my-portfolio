@@ -1127,6 +1127,10 @@ video {
     margin-left: 0px;
   }
 
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:inline{
     display: inline;
   }
@@ -1197,6 +1201,18 @@ video {
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:w-\[30\%\]{
+    width: 30%;
+  }
+
+  .md\:w-3{
+    width: 0.75rem;
+  }
+
+  .md\:w-\[30\]{
+    width: 30;
   }
 
   .md\:flex-row{
@@ -1330,6 +1346,22 @@ video {
   .md\:px-\[8\.9rem\]{
     padding-left: 8.9rem;
     padding-right: 8.9rem;
+  }
+
+  .md\:pb-\[8rem\]{
+    padding-bottom: 8rem;
+  }
+
+  .md\:pt-\[\]{
+    padding-top: ;
+  }
+
+  .md\:pt-\[8\.9re\]{
+    padding-top: 8.9re;
+  }
+
+  .md\:pt-\[8\.9rem\]{
+    padding-top: 8.9rem;
   }
 
   .md\:text-\[15px\]{
