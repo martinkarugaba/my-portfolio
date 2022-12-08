@@ -1103,6 +1103,10 @@ video {
     order: 3;
   }
 
+  .md\:order-1{
+    order: 1;
+  }
+
   .md\:mt-4{
     margin-top: 1rem;
   }
