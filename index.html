@@ -22,8 +22,14 @@
         </div>
 
         <!--* nav links -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!--* hamburger -->
         <div
-          class="w-[26px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer"
+          class="w-[26px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer md:hidden"
         >
           <!--* hamburger -->
           <div class="h-[3px] w-[100%] bg-light-blue rounded-sm"></div>
@@ -146,7 +152,7 @@
             A daily selection of privately personalized reads; no accounts or
             sign-ups required.
           </p>
-
+          <!------language link---->
           <ul class="w-[230px] flex justify-between items-center">
             <li>
               <a
@@ -361,7 +367,7 @@
               <a
                 href="#"
                 class="text-light-blue text-xs px-3 py-1 bg-faded-blue rounded-lg"
-                >javascript</a
+                >javascript </a
               >
             </li>
           </ul>
@@ -429,7 +435,7 @@
                 alt="peace icon"
               />
             </a>
-          </li>
+          </li> 
           <!--* twitter icon -->
           <li>
             <a href="https://twitter.com/martin_karugaba">
@@ -471,7 +477,9 @@
               alt=""
             />
           </div>
-          <ul class="flex flex-col justify-center items-start gap-y-3 p-3">
+          <ul
+            class="flex flex-col justify-center items-start gap-y-3 p-3"
+          >
             <!--* javascript -->
             <li
               class="flex justify-start items-center px-3 py-[9px] bg-light-grey-5 w-full"
@@ -540,5 +548,79 @@
       </div>
     </section>
     <!--* END ABOUT MYSELF -->
+
+    <!--* footer -->
+    <footer
+      class="flex flex-col justify-between items-center bg-light-blue before:content-['bbb'] before:border-2 before:border-red-700 before:w-[40%] before:bg-right before:bg-cover before:absolute before:bg-mobile-footer-shapes before:h-[500px] before:z-10 z-[-1] w-full relative overflow-hidden px-5 rounded-tl-[90px]"
+    >
+      <!--*header -->
+      <header class="mt-[100px]">
+        <h2 class="text-white text-center text-[2.5rem] font-bold">
+          Contact me
+        </h2>
+        <p
+          class="text-light-white text-center font-normal text-[1.25rem]"
+        >
+          If you have an application you are interested in developing,
+          a feature that you need built or a project that needs
+          coding. I’d love to help with it
+        </p>
+      </header>
+      <!--* form -->
+      <form
+        action="https://formspree.io/f/xjvznakb"
+        method="POST"
+        class="flex flex-col justify-center items-start gap-y-4 mt-8 mb-8 w-full"
+      >
+        <!--* name -->
+        <div class="w-full">
+          <input
+            type="text"
+            class="text-base p-2 px-4 w-full rounded-lg"
+            required
+            placeholder="Martin Karugaba"
+            id="name"
+            maxlength="30"
+            name="name"
+          />
+        </div>
+        <!--* email -->
+        <div class="w-full">
+          <input
+            type="email"
+            required
+            class="text-base p-2 px-4 w-full rounded-lg"
+            placeholder="martin@email.com"
+            id="mail"
+            name="email"
+          />
+        </div>
+        <!--* text-area -->
+        <div class="w-full">
+          <textarea
+            name="message"
+            id="message"
+            required
+            maxlength="500"
+            placeholder="Write your message here"
+            class="text-base p-2 px-4 rounded-lg h-[170px] w-full"
+          ></textarea>
+        </div>
+        <!--* submit -->
+        <div>
+          <button
+            class="text-light-blue p-4 bg-white rounded-lg"
+            type="submit"
+          >
+            Get in touch
+          </button>
+        </div>
+      </form>
+      <div
+        class="w-[134px] h-[5px] rounded-[2px] bg-[#0D151E] mb-[8px] self-center"
+      ></div>
+      <!--* end form -->
+    </footer>
+    <!--* footer -->
   </body>
 </html>
