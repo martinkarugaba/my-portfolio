@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'light-white': '#EBEBFF',
         'primary-blue': '#396DF2',
         'light-blue': '#6070FF',
         'dark-blue': '#172B4D',
@@ -24,6 +25,8 @@ module.exports = {
     },
     backgroundImage: {
       'hero-shapes': "url('/img/header-shapes-mobile.png')",
+      'mobile-footer-shapes':
+        "url('/img/footer/contact form shapes-mobile@2x.png')",
     },
     fontSize: {
       small: '13px',
