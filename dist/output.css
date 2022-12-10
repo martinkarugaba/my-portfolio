@@ -1268,6 +1268,14 @@ video {
     width: 170px;
   }
 
+  .md\:w-\[60\%\]{
+    width: 60%;
+  }
+
+  .md\:w-\[40\%\]{
+    width: 40%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1313,6 +1321,11 @@ video {
   .md\:gap-x-\[3\.6rem\]{
     -moz-column-gap: 3.6rem;
          column-gap: 3.6rem;
+  }
+
+  .md\:gap-x-\[3rem\]{
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .md\:rounded-bl-\[100px\]{
