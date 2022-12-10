@@ -515,6 +515,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sticky{
+  position: sticky;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
 .order-4{
   order: 4;
 }
@@ -747,6 +759,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded-sm{
@@ -1033,6 +1049,11 @@ video {
 .text-light-white{
   --tw-text-opacity: 1;
   color: rgb(235 235 255 / var(--tw-text-opacity));
+}
+
+.drop-shadow-md{
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .before\:absolute::before{

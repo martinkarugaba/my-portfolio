@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +13,7 @@
   </head>
   <body class="font-poppins">
     <!--!! NAVBAR SECTION -->
-    <header>
+    <header class="sticky top-0 left-0 drop-shadow-md">
       <nav
         class="h-14 md:h-[72px] w-full px-5 py-4 md:px-[154px] bg-slate-50 flex justify-between items-center"
       >
@@ -21,16 +21,22 @@
         <div
           class="text-light-blue leading-3 gap-y-0 flex flex-col justify-between items-start cursor-pointer font-semibold"
         >
-          <p class="text-2xl md:font-bold md:text-lg">My Logo</p>
+          <a href="#" class="text-2xl md:font-bold md:text-lg">My Logo</a>
         </div>
 
         <!--* nav links -->
         <ul
           class="hidden md:flex md:w-auto md:justify-center md:font-medium md:gap-x-8 md:items-center md:text-[15px]"
         >
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li class="cursor-pointer">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#about-me">About</a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#contact-me">Contact</a>
+          </li>
         </ul>
         <!--* hamburger -->
         <div
@@ -146,6 +152,7 @@
 
     <!--!! PROJECTS CONTAINER -->
     <section
+      id="portfolio"
       class="px-5 py-32 md:px-[8.9rem] grid grid-cols-1 gap-y-24 md:gap-y-[8.9rem] bg-gray-50"
     >
       <!--!! desktop project one -->
@@ -518,6 +525,7 @@
 
     <!--!! ABOUT MYSELF -->
     <section
+      id="about-me"
       class="px-5 py-32 md:p-[8.9rem] md:gap-x-[3.6rem] flex flex-col md:flex-row justify-between items-start gap-y-6"
     >
       <div>
@@ -704,6 +712,7 @@
 
     <!--!! FOOTER -->
     <footer
+      id="contact-me"
       class="flex flex-col md:pt-[8.9rem] before:md:invisible md:z-20 md:bg-contact-form-shapes md:bg-contain justify-between items-center bg-light-blue w-full overflow-hidden px-5 rounded-tl-[90px] before:content-[''] before:h-[700px] before:w-[65%] before:bg-mobile-footer-shapes before:bg-contain before:-z-1 before:absolute before:left-[35%] before:bg-right before:bg-no-repeat before:mt-5"
     >
       <!--*header -->
