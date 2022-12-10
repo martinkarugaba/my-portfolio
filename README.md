@@ -128,6 +128,18 @@ npm install
 - Twitter: [@twitterhandle](https://twitter.com/martin_karugaba)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Tracy Miranja**
+
+- GitHub: [@githubhandle](https://github.com/Tracy-miranja)
+- Twitter: [@twitterhandle](https://twitter.com/Tracy1Baraza )
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tracy-miranja-82349b204/)
+
+👤 **Glory Mugizi**
+
+- GitHub: [@githubhandle](https://github.com/glorymugizi)
+<!--- Twitter: [@twitterhandle](https://twitter.com/martin_karugaba)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)-->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
