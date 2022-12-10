@@ -1050,16 +1050,6 @@ video {
   width: 40%;
 }
 
-.before\:w-\[50\%\]::before{
-  content: var(--tw-content);
-  width: 50%;
-}
-
-.before\:w-\[0\%\]::before{
-  content: var(--tw-content);
-  width: 0%;
-}
-
 .before\:border-2::before{
   content: var(--tw-content);
   border-width: 2px;
@@ -1069,11 +1059,6 @@ video {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(185 28 28 / var(--tw-border-opacity));
-}
-
-.before\:bg-\[13rems\]::before{
-  content: var(--tw-content);
-  background-color: 13rems;
 }
 
 .before\:bg-mobile-footer-shapes::before{
