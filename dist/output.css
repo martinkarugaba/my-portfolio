@@ -1081,6 +1081,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:z-20{
+    z-index: 20;
+  }
+
   .md\:order-1{
     order: 1;
   }
@@ -1237,11 +1241,19 @@ video {
   }
 
   .md\:bg-contact-form-shapes{
-    background-image: /img/desktop/contact-form-background-shapes.png;
+    background-image: url('/img/desktop/contact-form-background-shapes.png');
   }
 
   .md\:bg-contain{
     background-size: contain;
+  }
+
+  .md\:bg-cover{
+    background-size: cover;
+  }
+
+  .md\:bg-center{
+    background-position: center;
   }
 
   .md\:bg-no-repeat{
@@ -1280,5 +1292,10 @@ video {
 
   .md\:text-\[40px\]{
     font-size: 40px;
+  }
+
+  .before\:md\:invisible::before{
+    content: var(--tw-content);
+    visibility: hidden;
   }
 }
