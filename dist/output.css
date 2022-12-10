@@ -644,14 +644,6 @@ video {
   height: 5px;
 }
 
-.h-\[px\]{
-  height: px;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
 .w-full{
   width: 100%;
 }
@@ -666,6 +658,10 @@ video {
 
 .w-\[20px\]{
   width: 20px;
+}
+
+.w-\[40px\]{
+  width: 40px;
 }
 
 .w-\[240px\]{
@@ -694,18 +690,6 @@ video {
 
 .w-\[134px\]{
   width: 134px;
-}
-
-.w-\[px\]{
-  width: px;
-}
-
-.w-\[50px\]{
-  width: 50px;
-}
-
-.w-\[40px\]{
-  width: 40px;
 }
 
 .cursor-pointer{
@@ -1168,24 +1152,20 @@ video {
     order: 2;
   }
 
-  .md\:mt-\[12px\]{
-    margin-top: 12px;
-  }
-
-  .md\:ml-0{
-    margin-left: 0px;
+  .md\:mt-2{
+    margin-top: 0.5rem;
   }
 
   .md\:mt-4{
     margin-top: 1rem;
   }
 
-  .md\:mt-0{
-    margin-top: 0px;
+  .md\:ml-0{
+    margin-left: 0px;
   }
 
-  .md\:mt-2{
-    margin-top: 0.5rem;
+  .md\:mt-0{
+    margin-top: 0px;
   }
 
   .md\:inline{
@@ -1212,8 +1192,8 @@ video {
     height: auto;
   }
 
-  .md\:h-\[496px\]{
-    height: 496px;
+  .md\:h-\[30px\]{
+    height: 30px;
   }
 
   .md\:h-full{
@@ -1224,8 +1204,28 @@ video {
     height: 40px;
   }
 
+  .md\:h-\[496px\]{
+    height: 496px;
+  }
+
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-\[920px\]{
+    width: 920px;
+  }
+
+  .md\:w-\[170px\]{
+    width: 170px;
+  }
+
+  .md\:w-\[30px\]{
+    width: 30px;
+  }
+
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:w-\[50\%\]{
@@ -1236,44 +1236,24 @@ video {
     width: 50%;
   }
 
-  .md\:w-full{
-    width: 100%;
-  }
-
-  .md\:w-\[30\%\]{
-    width: 30%;
-  }
-
-  .md\:w-\[260px\]{
-    width: 260px;
-  }
-
-  .md\:w-\[\]{
-    width: ;
-  }
-
-  .md\:w-\[920\]{
-    width: 920;
-  }
-
-  .md\:w-\[920px\]{
-    width: 920px;
-  }
-
-  .md\:w-\[100px\]{
-    width: 100px;
-  }
-
-  .md\:w-\[170px\]{
-    width: 170px;
+  .md\:w-\[40\%\]{
+    width: 40%;
   }
 
   .md\:w-\[60\%\]{
     width: 60%;
   }
 
-  .md\:w-\[40\%\]{
-    width: 40%;
+  .md\:w-\[30\%\]{
+    width: 30%;
+  }
+
+  .md\:w-\[10px\]{
+    width: 10px;
+  }
+
+  .md\:w-\[190px\]{
+    width: 190px;
   }
 
   .md\:flex-row{
@@ -1318,11 +1298,6 @@ video {
          column-gap: 2.9rem;
   }
 
-  .md\:gap-x-\[3\.6rem\]{
-    -moz-column-gap: 3.6rem;
-         column-gap: 3.6rem;
-  }
-
   .md\:gap-x-\[3rem\]{
     -moz-column-gap: 3rem;
          column-gap: 3rem;
@@ -1330,14 +1305,6 @@ video {
 
   .md\:rounded-bl-\[100px\]{
     border-bottom-left-radius: 100px;
-  }
-
-  .md\:border-2{
-    border-width: 2px;
-  }
-
-  .md\:border{
-    border-width: 1px;
   }
 
   .md\:bg-white{
