@@ -4,7 +4,7 @@
   transition: ease-in-out 2s;
 }
 
-.logo{
+.logo {
   animation-name: logo-animation;
   animation-duration: 3s;
   animation-iteration-count: 1;
@@ -13,8 +13,8 @@
 }
 
 @keyframes logo-animation {
-  from{
-    transform:rotate(0deg);
+  from {
+    transform: rotate(0deg);
   }
 
   to {
