@@ -77,18 +77,16 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Navbar]**
 - **[Header]**
+- **[Projects]**
+- **[Contact-form]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://martinkarugaba-my-porfolio.netlify.app/)
 
@@ -130,17 +128,28 @@ npm install
 - Twitter: [@twitterhandle](https://twitter.com/martin_karugaba)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Tracy Miranja**
+
+- GitHub: [@githubhandle](https://github.com/Tracy-miranja)
+- Twitter: [@twitterhandle](https://twitter.com/Tracy1Baraza )
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tracy-miranja-82349b204/)
+
+👤 **Glory Mugizi**
+
+- GitHub: [@githubhandle](https://github.com/glorymugizi)
+<!--- Twitter: [@twitterhandle](https://twitter.com/martin_karugaba)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)-->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!--## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Projects]**
 - [ ] **[Contact]**
-- [ ] **[Footer]**
+- [ ] **[Footer]**-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
