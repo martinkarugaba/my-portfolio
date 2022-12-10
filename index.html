@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martin Karugaba</title>
     <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="font-poppins">
     <!--!! NAVBAR SECTION -->
@@ -19,7 +16,7 @@
       >
         <!--* logo -->
         <div
-          class="text-light-blue leading-3 gap-y-0 flex flex-col justify-between items-start cursor-pointer font-semibold"
+          class="text-light-blue leading-3 gap-y-0 flex flex-col justify-between items-start cursor-pointerc font-semibold logo"
         >
           <a href="#" class="text-2xl md:font-bold md:text-lg">My Logo</a>
         </div>
@@ -42,15 +39,10 @@
         <div
           class="w-[26px] h-[30px] border-white flex flex-col justify-center items-center cursor-pointer md:hidden"
         >
-          <div
-            class="h-[3px] w-[100%] bg-light-blue rounded-sm"
-          ></div>
-          <div
-            class="h-[3px] w-[100%] bg-light-blue my-[6px] rounded-sm"
-          ></div>
-          <div
-            class="h-[3px] w-[100%] bg-light-blue rounded-sm"
-          ></div>
+          <!--* hamburger -->
+          <div class="h-[3px] w-[100%] bg-light-blue rounded-sm"></div>
+          <div class="h-[3px] w-[100%] bg-light-blue my-[6px] rounded-sm"></div>
+          <div class="h-[3px] w-[100%] bg-light-blue rounded-sm"></div>
         </div>
       </nav>
     </header>
@@ -60,44 +52,44 @@
     <section
       class="md:border-2 h-[600px] md:rounded-bl-[100px] md:h-[864px] bg-hero-shapes md:bg-desktop-header md:bg-contain md:bg-no-repeat bg-cover flex flex-col justify-center gap-y-4 items-start md:items-center px-5"
     >
-      <!--! header content -->
-      <div class="md:w-auto md:h-auto md:bg-white">
-        <h1
-          class="text-dark-blue md:text-5xl font-bold text-[40px] leading-11"
-        >
-          I'm Martin <br />
-          Glad to see <br class="md:hidden" />
-          you!
-        </h1>
-        <p class="text-base md:text-[20px] leading-7 text-light-teal">
-          I’m a software developer! I can help you build a product ,
-          feature or website Look through
-          <br class="hidden md:inline" />
-          some of my work and experience! If you like what you see and
-          have a project you need <br class="hidden md:inline" />
-          coded, don’t hestiate to contact me.
-        </p>
-        <div class="md:mt-4">
-          <h2
-            class="uppercase text-4xl text-h2 md:text-base font-medium"
-          >
-            Let's connect
-          </h2>
+    <div class="md:w-auto md:h-auto md:bg-white">
+      <h1 class="text-dark-blue font-bold text-[40px] leading-11">
+        I'm Martin <br />
+        Glad to see <br />
+        you!
+      </h1>
+      <p class="text-base leading-7 text-light-teal">
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
 
-          <!--* icons container-->
-          <ul
-            class="flex justify-between items-center gap-x-6 mt-2 list-none md:w-[170px] md:mt-[18px]"
-          >
-            <!--* twitter icon -->
-            <li>
-              <a href="https://twitter.com/martin_karugaba">
-                <img
-                  class="h-[20px] w-[20px] object-contain"
-                  src="./img/twitter.png"
-                  alt="twitter icon"
-                />
-              </a>
-            </li>
+      <div>
+        <h2 class="uppercase text-4xl text-h2 font-medium">Let's connect</h2>
+
+        <!--* icons container-->
+        <ul class="flex justify-between items-center gap-x-6 mt-2 list-none">
+          <!--* twitter icon -->
+          <li>
+            <a href="https://twitter.com/martin_karugaba">
+              <img
+                class="h-[20px] w-[20px] object-contain"
+                src="./img/twitter.png"
+                alt="twitter icon"
+              />
+            </a>
+          </li>
+
+          <!--* linkedin icon -->
+          <li>
+            <a href="https://www.linkedin.com/in/martin-karugaba-822442173/">
+              <img
+                class="h-[20px] w-[20px] object-contain"
+                src="./img/linkedin.png"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
 
             <!--* linkedin icon -->
             <li>
@@ -145,7 +137,7 @@
               </a>
             </li>
           </ul>
-        </div>
+      </div>
       </div>
     </section>
     <!--!! END HEADER SECTION -->
@@ -160,14 +152,15 @@
         class="w-[100%] p-4 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
       >
         <!--* project screen shot -->
-        <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
+        <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white ">
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
             src="./img/desktop/desktop-project-1.jpg"
             alt="project-1"
           />
         </div>
         <!--* project info -->
+
         <div
           class="flex md:w-[50%] md:h-full flex-col justify-around md:justify-start items-start gap-y-4"
         >
@@ -223,7 +216,7 @@
           </ul>
           <a
             href="#"
-            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="inline-block transition duration-500 ease-in-out text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
             >see project</a
           >
         </div>
@@ -237,7 +230,7 @@
         <!--* project screen shot -->
         <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
             src="./img/desktop/desktop-project-3.jpg"
             alt="project-1"
           />
@@ -262,13 +255,12 @@
               Back End Dev
             </li>
             <li class="h-2 w-2 bg-light-grey rounded-full"></li>
-            <li class="text-light-grey-4 font-semibold text-small">
-              2015
-            </li>
+            <li class="text-light-grey-4 font-semibold text-small">2015</li>
           </ul>
-          <p class="text-light-teal md:text-base text-[15px]">
-            A daily selection of privately personalized reads; no
-            accounts or sign-ups required.
+          <p class="text-light-teal text-[15px]">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+
           </p>
           <ul class="w-[230px] flex justify-between items-center">
             <li>
@@ -295,7 +287,8 @@
           </ul>
           <a
             href="#"
-            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] button"
+
             >see project</a
           >
         </div>
@@ -309,7 +302,7 @@
         <!--* project screen shot -->
         <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
             src="./img/desktop/desktop-project-4.jpg"
             alt="project-1"
           />
@@ -324,9 +317,8 @@
             Multi-Post <br />
             Stories
           </h2>
-          <ul
-            class="list-none md:text-lg flex justify-between items-center w-[240px]"
-          >
+          <ul class="list-none flex justify-between items-center w-[240px]">
+
             <li class="text-light-dark-blue text-small font-semibold">
               CANOPY
             </li>
@@ -335,13 +327,12 @@
               Back End Dev
             </li>
             <li class="h-2 w-2 bg-light-grey rounded-full"></li>
-            <li class="text-light-grey-4 font-semibold text-small">
-              2015
-            </li>
+            <li class="text-light-grey-4 font-semibold text-small">2015</li>
           </ul>
-          <p class="text-light-teal text-[15px] text-base">
-            A daily selection of privately personalized reads; no
-            accounts or sign-ups required.
+          <p class="text-light-teal text-[15px]">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+
           </p>
 
           <ul class="w-[230px] flex justify-between items-center">
@@ -369,7 +360,8 @@
           </ul>
           <a
             href="#"
-            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] button"
+
             >see project</a
           >
         </div>
@@ -383,21 +375,16 @@
         <!--* project screen shot -->
         <div class="w-full h-[50%] bg-white">
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
             src="./img/projects/project-3.png"
             alt="project-1"
           />
         </div>
         <!--* project info -->
         <div class="flex flex-col justify-around items-start gap-y-4">
-          <h2
-            class="text-[32px] text-dark-blue md:text-[40px] font-bold mt-3 -mb-2"
-          >
-            Tonic
-          </h2>
-          <ul
-            class="list-none md:text-lg flex justify-between items-center w-[240px]"
-          >
+          <h2 class="text-[32px] text-dark-blue font-bold mt-3 -mb-2">Tonic</h2>
+          <ul class="list-none flex justify-between items-center w-[240px]">
+
             <li class="text-light-dark-blue text-small font-semibold">
               CANOPY
             </li>
@@ -406,13 +393,12 @@
               Back End Dev
             </li>
             <li class="h-2 w-2 bg-light-grey rounded-full"></li>
-            <li class="text-light-grey-4 font-semibold text-small">
-              2015
-            </li>
+            <li class="text-light-grey-4 font-semibold text-small">2015</li>
           </ul>
-          <p class="text-light-teal md:text-base text-[15px]">
-            A daily selection of privately personalized reads; no
-            accounts or sign-ups required.
+          <p class="text-light-teal text-[15px]">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+
           </p>
 
           <ul class="w-[230px] flex justify-between items-center">
@@ -440,7 +426,8 @@
           </ul>
           <a
             href="#"
-            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] button"
+
             >see project</a
           >
         </div>
@@ -454,7 +441,7 @@
         <!--* project screen shot -->
         <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
             src="./img/desktop/desktop-project-2.jpg"
             alt="project-1"
           />
@@ -469,9 +456,8 @@
             Multi-post <br />
             Stories
           </h2>
-          <ul
-            class="list-none md:text-lg flex justify-between items-center w-[240px]"
-          >
+          <ul class="list-none flex justify-between items-center w-[240px]">
+
             <li class="text-light-dark-blue text-small font-semibold">
               CANOPY
             </li>
@@ -480,13 +466,12 @@
               Back End Dev
             </li>
             <li class="h-2 w-2 bg-light-grey rounded-full"></li>
-            <li class="text-light-grey-4 font-semibold text-small">
-              2015
-            </li>
+            <li class="text-light-grey-4 font-semibold text-small">2015</li>
           </ul>
-          <p class="text-light-teal md:text-base text-[15px]">
-            A daily selection of privately personalized reads; no
-            accounts or sign-ups required.
+          <p class="text-light-teal text-[15px]">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+
           </p>
 
           <ul class="w-[230px] flex justify-between items-center">
@@ -508,13 +493,14 @@
               <a
                 href="#"
                 class="text-light-blue text-xs px-3 py-1 bg-faded-blue rounded-lg"
-                >javascript</a
+                >javascript </a
               >
             </li>
           </ul>
           <a
             href="#"
-            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="inline-block text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] button"
+
             >see project</a
           >
         </div>
@@ -528,11 +514,19 @@
       id="about-me"
       class="px-5 py-32 md:p-[8.9rem] md:gap-x-[3.6rem] flex flex-col md:flex-row justify-between items-start gap-y-6"
     >
+      <h2 class="text-dark-blue font-bold text-[40px] leading-11">
+        About <br />
+        Myself
+      </h2>
+
+      <p class="text-base leading-7 text-light-teal">
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+
       <div>
-        <h2 class="text-dark-blue font-bold text-[40px] leading-11">
-          About <br />
-          Myself
-        </h2>
+        <h2 class="uppercase text-4xl text-h2 font-medium">Let's connect</h2>
 
         <p class="text-base leading-7 md:mt-[12px] text-light-teal">
           I’m a software developer! I can help you build a product ,
@@ -541,10 +535,17 @@
           need coded, don’t hestiate to contact me.
         </p>
 
-        <div class="md:mt-[12px]">
-          <h2 class="uppercase text-4xl text-h2 font-medium">
-            Let's connect
-          </h2>
+          <!--* linkedin icon -->
+          <li>
+            <a href="https://www.linkedin.com/in/martin-karugaba-822442173/">
+              <img
+                class="h-[20px] w-[20px] object-contain"
+                src="./img/linkedin.png"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+
 
           <!--* icons container-->
           <ul
@@ -608,7 +609,7 @@
           </ul>
 
           <a
-            class="inline-block text-primary-blue p-3 font-medium text-[17px] border border-light-blue rounded-lg mb-[14px] mt-6 md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="inline-block transition duration-500 ease-in-out text-primary-blue p-3 font-medium text-[17px] border border-light-blue rounded-lg mb-[14px] mt-6 md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
             href="#"
             >Get my resume</a
           >
@@ -618,12 +619,8 @@
       <!--* languages -->
       <div class="w-full">
         <div>
-          <div
-            class="flex justify-between items-center w-full px-4 py-8"
-          >
-            <h3 class="text-[20px] font-medium text-black">
-              Languages
-            </h3>
+          <div class="flex justify-between items-center w-full px-4 py-8">
+            <h3 class="text-[20px] font-medium text-black">Languages</h3>
             <img
               class="h-[30px] w-[30px] object-contain"
               src="./img/languages/arrow-down.png"
@@ -657,9 +654,8 @@
                 src="./img/languages/html.png"
                 alt="arrow-forward"
               />
-              <p
-                class="ml-4 md:ml-0 md:mt-4 text-[15px] text-[#253858] uppercase font-medium"
-              >
+              <p class="ml-4 text-[15px] text-[#253858] uppercase font-medium">
+
                 html
               </p>
             </li>
@@ -672,9 +668,8 @@
                 src="./img/languages/css.png"
                 alt="arrow-forward"
               />
-              <p
-                class="ml-4 md:ml-0 md:mt-4 text-[15px] text-[#253858] uppercase font-medium"
-              >
+              <p class="ml-4 text-[15px] text-[#253858] uppercase font-medium">
+
                 css
               </p>
             </li>
@@ -685,9 +680,7 @@
         <div
           class="flex justify-between items-center w-full px-4 py-8 border-b border-b-[#DFE1E6]"
         >
-          <h3 class="text-[20px] font-medium text-black">
-            Frameworks
-          </h3>
+          <h3 class="text-[20px] font-medium text-black">Frameworks</h3>
           <img
             class="h-[19px] w-[20px] object-contain"
             src="./img/languages/arrow-forward.png"
@@ -721,7 +714,7 @@
           Contact me
         </h2>
         <p
-          class="text-light-white text-center font-normal text-[1.25rem]"
+          class="text-light-white text-center font-normal text-[1.25rem] transition duration-500 ease-in-out md:hover:translate-x-3 cursor-pointer"
         >
           If you have an application you are interested in developing,
           a feature that you need built or a project that needs
@@ -771,7 +764,7 @@
         <!--* submit -->
         <div>
           <button
-            class="text-light-blue p-4 bg-white rounded-lg md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+            class="text-light-blue p-4 hover:bg-red-700 transition duration-500 ease-in-out bg-white rounded-lg md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
             type="submit"
           >
             Get in touch
