@@ -1,18 +1,18 @@
 const bars = document.querySelector('.bars');
-const mobile_menu = document.querySelector('.mobile-menu');
-const close_btn = document.querySelector('.close-btn');
-const nav_links = document.querySelectorAll('.nav-link');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtn = document.querySelector('.close-btn');
+const navLinks = document.querySelectorAll('.nav-link');
 
 bars.addEventListener('click', () => {
-  mobile_menu.classList.add('open');
+  mobileMenu.classList.add('open');
 });
 
-close_btn.addEventListener('click', () => {
-  mobile_menu.classList.remove('open');
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
 });
 
-nav_links.forEach((nav_link) => {
-  mobile_menu.addEventListener('click', () => {
-    mobile_menu.classList.remove('open');
+navLinks.forEach((nav_link) => {
+  mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
   });
 });
