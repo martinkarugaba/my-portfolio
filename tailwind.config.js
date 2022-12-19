@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html'],
   theme: {
     extend: {
+      zIndex: {
+        'neg': '-10',
+      },
       colors: {
         'light-white': '#EBEBFF',
         'primary-blue': '#396DF2',
