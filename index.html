@@ -13,7 +13,7 @@
   </head>
   <body class="font-poppins">
     <!--!! NAVBAR SECTION -->
-    <header class="sticky top-0 left-0 drop-shadow-md">
+    <header class="sticky top-0 left-0 drop-shadow-md z-10">
       <nav
         class="h-14 md:h-[72px] w-full px-5 py-4 md:px-[154px] bg-slate-50 flex justify-between items-center"
       >
@@ -44,7 +44,7 @@
         <!--* hamburger -->
         <ul
           id="bars"
-          class="w-[26px] h-[30px] border-2 border-red-700 flex flex-col justify-center items-center cursor-pointer md:hidden bars"
+          class="w-[26px] h-[30px] flex flex-col justify-center items-center cursor-pointer md:hidden bars"
         >
           <!--* bars -->
           <li class="h-[3px] w-[100%] bg-light-blue rounded-sm"></li>
@@ -58,7 +58,7 @@
 
     <!--* mobile nav section - only visible on mobile -->
     <section
-      class="z-10 mobile-menu md:hidden top-0 left-0 hidden flex-col h-[812px] w-[100vw] justify-start pt-[35px] pl-[28px] pr-[38px] items-start absolute"
+      class="z-10 mobile-menu md:hidden top-0 left-0 hidden flex-col h-[100vh] w-[100vw] justify-start pt-[35px] pl-[28px] pr-[38px] items-start absolute"
     >
       <div class="self-end close-btn">
         <img
@@ -70,21 +70,21 @@
       <ul class="mt-[33px]">
         <li class="cursor-pointer">
           <a
-            class="text-white font-semibold text-[32px]"
+            class="text-white font-semibold text-[32px] nav-link"
             href="#portfolio"
             >Portfolio</a
           >
         </li>
         <li class="cursor-pointer mt-[40px]">
           <a
-            class="text-white font-semibold text-[32px]"
+            class="text-white font-semibold text-[32px] nav-link"
             href="#about-me"
             >About</a
           >
         </li>
         <li class="cursor-pointer mt-[40px]">
           <a
-            class="text-white font-semibold text-[32px]"
+            class="text-white font-semibold text-[32px] nav-link"
             href="#contact-me"
             >Contact</a
           >
@@ -744,7 +744,7 @@
     <!--!! FOOTER -->
     <footer
       id="contact-me"
-      class="flex flex-col md:pt-[8.9rem] before:md:invisible md:z-20 md:bg-contact-form-shapes md:bg-contain justify-between items-center bg-light-blue w-full overflow-hidden px-5 rounded-tl-[90px] before:content-[''] before:h-[700px] before:w-[65%] before:bg-mobile-footer-shapes before:bg-contain before:-z-1 before:absolute before:left-[35%] before:bg-right before:bg-no-repeat before:mt-5"
+      class="flex flex-col z-neg md:pt-[8.9rem] before:md:invisible md:z-20 md:bg-contact-form-shapes md:bg-contain justify-between items-center bg-light-blue w-full overflow-hidden px-5 rounded-tl-[90px] before:content-[''] before:h-[700px] before:w-[65%] before:bg-mobile-footer-shapes before:bg-contain before:-z-1 before:absolute before:left-[35%] before:bg-right before:bg-no-repeat before:mt-5"
     >
       <!--*header -->
       <header class="mt-[100px] md:mt-0 md:w-[30%]">

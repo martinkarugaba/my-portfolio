@@ -726,6 +726,18 @@ video {
   height: 5px;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-\[100\]{
+  height: 100;
+}
+
+.h-\[100vh\]{
+  height: 100vh;
+}
+
 .w-full{
   width: 100%;
 }
