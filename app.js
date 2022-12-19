@@ -11,7 +11,7 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('open');
 });
 
-navLinks.forEach((nav_link) => {
+navLinks.forEach(() => {
   mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.remove('open');
   });
