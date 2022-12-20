@@ -1,50 +1,62 @@
-const projectsSection = document.querySelector('.projects-section');
+const projectsContainer = document.querySelector('.projects-section');
 
 const projectsList = [
   {
+    id: 1,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-1.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    button: 'see prooject',
+    button: 'see project',
     technologies: ['html', 'css', 'javascript'],
   },
   {
+    id: 2,
     name: 'Multi-post stories',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-2.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    button: 'see prooject',
+    button: 'see project',
     technologies: ['html', 'css', 'javascript'],
   },
   {
+    id: 3,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-3.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    button: 'see prooject',
+    button: 'see project',
     technologies: ['html', 'css', 'javascript'],
   },
   {
+    id: 4,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-4.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    button: 'see prooject',
+    button: 'see project',
     technologies: ['html', 'css', 'javascript'],
   },
 ];
 
-projectsList.forEach((project) => {
-  const { name, subtitle, featuredImage, description, button, technologies} = project;
-  projectsSection.innerHTML += ` <div
-  class="w-[100%] p-4 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
+projectsList.forEach((project, index) => {
+  const {
+    id,
+    name,
+    subtitle,
+    featuredImage,
+    description,
+    button,
+    technologies,
+  } = project;
+  projectsContainer.innerHTML += ` 
+  <div id=${id} class="project w-[100%] p-4 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
 >
-  <!--* project screen shot -->
+  <!--* project image -->
   <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
     <img
       class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
@@ -52,8 +64,8 @@ projectsList.forEach((project) => {
       alt="project-1"
     />
   </div>
-  <!--* project info -->
 
+  <!--* project info -->
   <div
     class="flex md:w-[50%] md:h-full flex-col justify-around md:justify-start items-start gap-y-4"
   >
@@ -106,14 +118,44 @@ projectsList.forEach((project) => {
         >
       </li>
     </ul>
-    <a
-      href="#"
-      class="inline-block transition duration-500 ease-in-out text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
-      >${button}</a
+    <button
+      class="inline-block open-popup-btn transition duration-500 ease-in-out text-primary-blue p-4 text-[17px] border border-light-blue rounded-lg mb-[14px] md:enabled:text-light-blue md:enabled:border-[#7F8CFF] md:enabled:bg-white md:hover:bg-light-blue md:hover:text-white md:active:bg-[#2230D2] md:active:text-white md:disabled:bg-[#e5e5e5] md:disabled:text-[#5E6C84] md:disabled:border-[#C1C7D0]"
+      >${button}</button
     >
   </div>
 </div>`;
-
 });
 
-console.log('projects section');
+// open popup window
+const openModalButton = document.querySelectorAll(`.open-popup-btn`);
+const projects = document.querySelectorAll('.project');
+
+openModalButton.forEach((btn, index) =>
+  btn.addEventListener('click', () => {
+    console.log(`click project ${index}`);
+
+    // if the index of the project matches the index
+    // that we have here
+    // show me the modal for that project
+
+    if (index === project.id) {
+      //...
+    }
+
+  })
+);
+
+const popupContainer = document.createElement('section');
+popupContainer.classList.add([
+  'h-[70vw]',
+  'w-[100vw]',
+  'border-2',
+  'border-red-700',
+]);
+
+popupContainer.innerHTML = `
+  <div>
+  <h3>Title</h3>
+  <p>This is the description</p>
+  </div>
+`;
