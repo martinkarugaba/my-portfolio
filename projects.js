@@ -38,11 +38,15 @@ const projectsList = [
     featuredImage: 'img/desktop/project-4.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    button: 'see project',
-    technologies: ['html', 'css', 'javascript'],
-  },
+      button: 'see project',
+      technologies: ['html', 'css', 'javascript'],
+    },
 ];
-
+  
+  // open popup window
+  const openModalButton = document.querySelectorAll(`.open-popup-btn`);
+  const projects = document.querySelectorAll('.project');
+  
 projectsList.forEach((project, index) => {
   const {
     id,
@@ -124,11 +128,6 @@ projectsList.forEach((project, index) => {
     >
   </div>
 </div>`;
-});
-
-// open popup window
-const openModalButton = document.querySelectorAll(`.open-popup-btn`);
-const projects = document.querySelectorAll('.project');
 
 openModalButton.forEach((btn, index) =>
   btn.addEventListener('click', () => {
@@ -137,13 +136,15 @@ openModalButton.forEach((btn, index) =>
     // if the index of the project matches the index
     // that we have here
     // show me the modal for that project
-
+    projectsList[index]
     if (index === project.id) {
       //...
     }
 
   })
 );
+});
+
 
 const popupContainer = document.createElement('section');
 popupContainer.classList.add([
