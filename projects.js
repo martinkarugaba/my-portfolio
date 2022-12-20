@@ -3,7 +3,7 @@ const projectsContainer = document.querySelector('.projects-section');
 
 const projectsList = [
   {
-    id: 1,
+    id: 0,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-1.jpg',
@@ -13,7 +13,7 @@ const projectsList = [
     technologies: ['html', 'css', 'javascript'],
   },
   {
-    id: 2,
+    id: 1,
     name: 'Multi-post stories',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-2.jpg',
@@ -23,7 +23,7 @@ const projectsList = [
     technologies: ['html', 'css', 'javascript'],
   },
   {
-    id: 3,
+    id: 2,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-3.jpg',
@@ -33,7 +33,7 @@ const projectsList = [
     technologies: ['html', 'css', 'javascript'],
   },
   {
-    id: 4,
+    id: 3,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: 'img/desktop/project-4.jpg',
@@ -127,20 +127,20 @@ projectsList.forEach((project, index_) => {
 
   <!-- modal -->
   <div class="border-2 hidden absolute border-red-700 h-[300px] modal w-[full]">
-  <h3>${name}</h3>
-  <p>${description}</p>
-  <button>${button}</button>
+    <h3>${name}</h3>
+    <p>${description}</p>
+    <button>${button}</button>
   </div>
 </div>`;
 });
 
-const openPopupButton = document.querySelectorAll('.open-popup-btn');
+const openPopupButtons = document.querySelectorAll('.open-popup-btn');
 const modals = document.querySelectorAll('.modal');
 
-openPopupButton.forEach((btn) => {
+//console.log(modals[0]);
+
+openPopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals.forEach((modal) => {
-      modal.classList.toggle('hidden');
-    });
+    modals[index].classList.toggle('hidden');
   });
 });
