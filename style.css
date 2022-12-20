@@ -21,3 +21,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* mobile menu */
+.mobile-menu {
+  background: rgba(57, 109, 242, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.open {
+  display: flex;
+}

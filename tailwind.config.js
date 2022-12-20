@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'],
+  content: ['./index.html', './app.js'],
   theme: {
     extend: {
+      zIndex: {
+        neg: '-10',
+      },
       colors: {
         'light-white': '#EBEBFF',
         'primary-blue': '#396DF2',
