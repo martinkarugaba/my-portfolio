@@ -1,3 +1,4 @@
+// select projects container
 const projectsContainer = document.querySelector('.projects-section');
 
 const projectsList = [
@@ -42,9 +43,6 @@ const projectsList = [
     technologies: ['html', 'css', 'javascript'],
   },
 ];
-
-// open popup window
-const projects = document.querySelectorAll('.project');
 
 projectsList.forEach((project, index_) => {
   const {
@@ -126,32 +124,23 @@ projectsList.forEach((project, index_) => {
       >${button}</button
     >
   </div>
-</div>`;
-});
 
-const modal = document.createElement('div');
-const openModalBtn = document.querySelectorAll('.open-modal-btn');
-openModalBtn.forEach((btn) => {
-  if (index === id) {
-    console.log('open modal');
-  }
-});
-
-projectsList.forEach((project) => {
-  const {
-    id,
-    name,
-    subtitle,
-    featuredImage,
-    description,
-    button,
-    technologies,
-  } = project;
-  modal.innerHTML = `
+  <!-- modal -->
+  <div class="border-2 hidden absolute border-red-700 h-[300px] modal w-[full]">
   <h3>${name}</h3>
   <p>${description}</p>
   <button>${button}</button>
-  `;
+  </div>
+</div>`;
 });
 
-projects.appendChild(modal);
+const openPopupButton = document.querySelectorAll('.open-popup-btn');
+const modals = document.querySelectorAll('.modal');
+
+openPopupButton.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modals.forEach((modal) => {
+      modal.classList.toggle('hidden');
+    });
+  });
+});
