@@ -1,3 +1,4 @@
+// mobile menu
 const bars = document.querySelector('.bars');
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeBtn = document.querySelector('.close-btn');
