@@ -55,7 +55,7 @@ projectsList.forEach((project, index_) => {
     technologies,
   } = project;
   projectsContainer.innerHTML += ` 
-  <div id=${id} class="project w-[100%] p-4 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
+  <div id=${id} class="project w-[100%] p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
 >
   <!--* project image -->
   <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
@@ -126,20 +126,22 @@ projectsList.forEach((project, index_) => {
   </div>
 
   <!-- modal -->
-  <div class="border-2 cursor-pointer hidden absolute border-red-700 h-[300px] modal w-[full]">
-    <div class='close-popup text-red-700 text-xl'>
-    x
+  <div class="hidden h-[100vh] w-[100vw] absolute modal border-2 border-green-700 z-10">
+    <div class="border-2 h-[80%] modal-content w-[90%] cursor-pointer bg-slate-500 border-red-700 ">
+      <button class='close-popup text-red-700 border-2 border-red-600 text-xl p-4'>
+      x
+      </button>
+      <h3>${name}</h3>
+      <p>${description}</p>
+      <button>${button}</button>
     </div>
-    <h3>${name}</h3>
-    <p>${description}</p>
-    <button>${button}</button>
   </div>
 </div>`;
 });
 
-const openPopupButtons = document.querySelectorAll('.open-popup-btn');
 const modals = document.querySelectorAll('.modal');
-const closePopupBtn = document.querySelector('.close-popup');
+const openPopupButtons = document.querySelectorAll('.open-popup-btn');
+const closePopupButons = document.querySelectorAll('.close-popup');
 
 openPopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
@@ -147,4 +149,8 @@ openPopupButtons.forEach((btn, index) => {
   });
 });
 
-
+closePopupButons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    modals[index].classList.add('hidden');
+  });
+});
