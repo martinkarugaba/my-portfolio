@@ -126,12 +126,15 @@ projectsList.forEach((project, index_) => {
   </div>
 
   <!-- modal -->
-  <div class="hidden h-[100vh] w-[100vw] absolute modal border-2 border-green-700 z-10">
-    <div class="border-2 h-[80%] modal-content w-[90%] cursor-pointer bg-slate-500 border-red-700 ">
-      <button class='close-popup text-red-700 border-2 border-red-600 text-xl p-4'>
-      x
-      </button>
-      <h3>${name}</h3>
+  <div class="hidden z-10 modal-wrapper">
+    <div class="modal-content bg-white z-10 rounded">
+      <header class='flex justify-between items-center'>
+        <h3>${name}</h3>
+        <button class='close-popup text-red-700 border-2 border-red-600 text-xl p-4'>
+          <img src='img/close.png' alt='close button'/>
+        </button>
+      </header>
+
       <p>${description}</p>
       <button>${button}</button>
     </div>
@@ -139,18 +142,23 @@ projectsList.forEach((project, index_) => {
 </div>`;
 });
 
-const modals = document.querySelectorAll('.modal');
+const modals = document.querySelectorAll('.modal-wrapper');
 const openPopupButtons = document.querySelectorAll('.open-popup-btn');
 const closePopupButons = document.querySelectorAll('.close-popup');
 
+let topPosition = ``;
+//let scrollable =
+//  document.documentElement.scrollHeight - window.innerHeight;
+
 openPopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals[index].classList.remove('hidden');
+    modals[index].classList.add('show-modal');
+    window.scrollTo(0, 0);
   });
 });
 
 closePopupButons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals[index].classList.add('hidden');
+    modals[index].classList.remove('show-modal');
   });
 });
