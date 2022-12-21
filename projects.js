@@ -127,15 +127,21 @@ projectsList.forEach((project, index_) => {
 
   <!-- modal -->
   <div class="hidden z-10 modal-wrapper">
-    <div class="modal-content bg-white z-10 rounded">
+    <div class="modal-content bg-white z-10 rounded-2xl py-[18px] px-4">
       <header class='flex justify-between items-center'>
-        <h3>${name}</h3>
-        <button class='close-popup text-red-700 border-2 border-red-600 text-xl p-4'>
-          <img src='img/close.png' alt='close button'/>
+        <h3 class="font-bold text-[24px] self-end">${name}</h3>
+        <button class='close-popup'>
+          <img class="h-[10px] w-[10px]" src='./img/close.png' alt='close button'/>
         </button>
       </header>
 
-      <p>${description}</p>
+      <div class="text-[13px] font-semibold flex justify-between items-center w-[75%] text-light-grey-4">
+        <span class="uppercase text-[#344563]">${subtitle[0]}</span>
+        <span class="h-[10px] w-[10px] bg-light-grey rounded-full"></span>
+        <span class="capitalize">${subtitle[1]}</span>
+        <span class="h-[10px] w-[10px] rounded-full bg-light-grey"></span>
+        <span>${subtitle[2]}</span>
+      </div>
       <button>${button}</button>
     </div>
   </div>
