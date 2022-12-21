@@ -55,7 +55,7 @@ projectsList.forEach((project, index_) => {
     technologies,
   } = project;
   projectsContainer.innerHTML += ` 
-  <div id=${id} class="project w-[100%] p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
+  <div id=${id} class="project w-[100%] z-10 p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
 >
   <!--* project image -->
   <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
@@ -126,7 +126,7 @@ projectsList.forEach((project, index_) => {
   </div>
 
   <!-- modal -->
-  <div class="z-10 hidden modal-wrapper">
+  <div class="z-20 hidden modal-wrapper">
     <div class="modal-content bg-white z-10 rounded-2xl py-[18px] px-4">
       <header class='flex justify-between items-center'>
         <h3 class="font-bold text-[32px] self-end">${name}</h3>
@@ -136,7 +136,7 @@ projectsList.forEach((project, index_) => {
       </header>
 
       <!-- modal subtitle -->
-      <div class="text-[13px] font-semibold mt-[22px] flex justify-between items-center w-[75%] text-light-grey-4">
+      <div class="text-[13px] font-semibold mt-[22px] flex justify-between items-center w-[75%] md:w-[260px] text-light-grey-4">
         <span class="uppercase text-[#344563]">${subtitle[0]}</span>
         <span class="h-[10px] w-[10px] bg-light-grey rounded-full"></span>
         <span class="capitalize">${subtitle[1]}</span>
@@ -144,36 +144,44 @@ projectsList.forEach((project, index_) => {
         <span>${subtitle[2]}</span>
       </div>
 
-      <img class="mt-[20px]" src=${featuredImage} alt="project image"/>
-
-      <p class="mt-[12px] text-[15px] text-[#344563] leading-6">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-      </p>
-
-      <div class="mt-[12px]">
-        <span class="text-light-blue text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[0]}</span>
-        <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[1]}</span>
-        <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[2]}</span>
+      <div class="image-wrapper mt-[20px]">
+        <img class="object-cover" src=${featuredImage} alt="project image"/>
       </div>
 
-      <ul class="flex mt-[49px]">
-       <li class="flex justify-between items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px]">
-        <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
-        <a>
-          <img class="ml-[13px]" src="./img/see-live.png"/>
-        </a>
-       </li>
+      <div class="modal__bottom-section md:flex">
+        <div class="text-wrapper">
+          <p class="mt-[12px] text-[15px] text-[#344563] leading-6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+          </p>
+        </div>
 
-       <li class="flex justify-between items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px] ml-[14px]">
-        <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
-        <a>
-          <img class="ml-[13px]" src="./img/github-modal.png"/>
-        </a>
-       </li>
-      </ul>
+        <div class="modal__bottom-left-section">
+          <div class="mt-[12px]">
+            <span class="text-light-blue text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[0]}</span>
+            <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[1]}</span>
+            <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[2]}</span>
+          </div>
+
+          <!-- modal buttons -->
+          <ul class="flex mt-[49px] modal-buttons">
+            <li class="flex justify-between md:cursor-pointer items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px]">
+              <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
+              <a>
+                <img class="ml-[13px]" src="./img/see-live.png"/>
+              </a>
+            </li>
+            <li class="flex justify-between md:cursor-pointer items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px] ml-[14px]">
+              <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
+              <a>
+                <img class="ml-[13px]" src="./img/github-modal.png"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     </div>
   </div>

@@ -31,7 +31,7 @@
 
 /* modal wrapper */
 .modal-wrapper {
-  background: rgba(193, 199, 208, 0.5);
+  background: rgba(193, 199, 208, 0.1);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: absolute;
@@ -55,4 +55,53 @@
 
 .open{
   display: flex;
+}
+
+.image-wrapper{
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .modal-wrapper{
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 9rem;
+  }
+
+  .modal-content{
+    padding: 24px;
+  }
+
+
+  .image-wrapper{
+    height: 568px;
+  }
+
+  .image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text-wrapper{
+    width: 60%;
+    margin-bottom: 4rem;
+  }
+
+  .modal__bottom-section{
+    margin-top: 56px;
+  }
+
+  .modal__bottom-left-section{
+    margin-left: 24px;
+  }
+
+  .modal-buttons{
+    margin-top: 45px;
+  }
+
+  .project:nth-child(even){
+    flex-direction: row-reverse;
+  }
 }
