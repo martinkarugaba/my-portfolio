@@ -126,7 +126,7 @@ projectsList.forEach((project, index_) => {
   </div>
 
   <!-- modal -->
-  <div class="hidden z-10 modal-wrapper">
+  <div class="z-10 modal-wrapper">
     <div class="modal-content bg-white z-10 rounded-2xl py-[18px] px-4">
       <header class='flex justify-between items-center'>
         <h3 class="font-bold text-[24px] self-end">${name}</h3>
@@ -142,7 +142,22 @@ projectsList.forEach((project, index_) => {
         <span class="h-[10px] w-[10px] rounded-full bg-light-grey"></span>
         <span>${subtitle[2]}</span>
       </div>
-      <button>${button}</button>
+
+      <img class="mt-[12px]" src="./img/desktop/project-1.jpg"/>
+
+      <p class="mt-[12px] text-[15px] text-[#344563] leading-6">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type 
+        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+      </p>
+
+      <div class="mt-[12px]">
+        <span class="text-light-blue text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[0]}</span>
+        <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[1]}</span>
+        <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[2]}</span>
+      </div>
+
     </div>
   </div>
 </div>`;
@@ -151,10 +166,6 @@ projectsList.forEach((project, index_) => {
 const modals = document.querySelectorAll('.modal-wrapper');
 const openPopupButtons = document.querySelectorAll('.open-popup-btn');
 const closePopupButons = document.querySelectorAll('.close-popup');
-
-let topPosition = ``;
-//let scrollable =
-//  document.documentElement.scrollHeight - window.innerHeight;
 
 openPopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
