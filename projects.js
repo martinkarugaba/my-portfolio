@@ -44,7 +44,7 @@ const projectsList = [
   },
 ];
 
-projectsList.forEach((project, index_) => {
+projectsList.forEach((project) => {
   const {
     id,
     name,

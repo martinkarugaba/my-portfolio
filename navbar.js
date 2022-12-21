@@ -6,7 +6,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 bars.addEventListener('click', () => {
   mobileMenu.classList.add('open');
-  console.log('open navbar');
 });
 
 closeBtn.addEventListener('click', () => {

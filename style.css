@@ -42,66 +42,65 @@
   padding: 2rem 1rem;
 }
 
-.modal-content{
+.modal-content {
   height: 100%;
   width: 100%;
 }
 
-.show-modal{
+.show-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
-.open{
+.open {
   display: flex;
 }
 
-.image-wrapper{
+.image-wrapper {
   width: 100%;
 }
 
-@media screen and (min-width:768px) {
-  .modal-wrapper{
-    /*display: flex;*/
+@media screen and (min-width: 768px) {
+  .modal-wrapper {
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     padding: 5rem 9rem;
   }
 
-  .modal-content{
+  .modal-content {
     padding: 24px;
   }
 
-
-  .image-wrapper{
+  .image-wrapper {
     height: 568px;
   }
 
-  .image-wrapper img{
+  .image-wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
 
-  .text-wrapper{
+  .text-wrapper {
     width: 60%;
     margin-bottom: 4rem;
   }
 
-  .modal__bottom-section{
+  .modal__bottom-section {
     margin-top: 56px;
   }
 
-  .modal__bottom-left-section{
+  .modal__bottom-left-section {
     margin-left: 24px;
   }
 
-  .modal-buttons{
+  .modal-buttons {
     margin-top: 45px;
   }
 
-  .project:nth-child(even){
+  .project:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
