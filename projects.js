@@ -6,7 +6,7 @@ const projectsList = [
     id: 0,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
-    featuredImage: 'img/desktop/project-1.jpg',
+    featuredImage: './img/desktop/project-1.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
@@ -16,7 +16,7 @@ const projectsList = [
     id: 1,
     name: 'Multi-post stories',
     subtitle: ['canopy', 'back end dev', '2015'],
-    featuredImage: 'img/desktop/project-2.jpg',
+    featuredImage: './img/desktop/project-2.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
@@ -26,7 +26,7 @@ const projectsList = [
     id: 2,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
-    featuredImage: 'img/desktop/project-3.jpg',
+    featuredImage: './img/desktop/project-3.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
@@ -36,7 +36,7 @@ const projectsList = [
     id: 3,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
-    featuredImage: 'img/desktop/project-4.jpg',
+    featuredImage: './img/desktop/project-4.jpg',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
@@ -126,16 +126,17 @@ projectsList.forEach((project, index_) => {
   </div>
 
   <!-- modal -->
-  <div class="z-10 modal-wrapper">
+  <div class="z-10 hidden modal-wrapper">
     <div class="modal-content bg-white z-10 rounded-2xl py-[18px] px-4">
       <header class='flex justify-between items-center'>
-        <h3 class="font-bold text-[24px] self-end">${name}</h3>
+        <h3 class="font-bold text-[32px] self-end">${name}</h3>
         <button class='close-popup'>
-          <img class="h-[10px] w-[10px]" src='./img/close.png' alt='close button'/>
+          <img class="h-[12px] w-[12px]" src='./img/close_3.png' alt='close button'/>
         </button>
       </header>
 
-      <div class="text-[13px] font-semibold flex justify-between items-center w-[75%] text-light-grey-4">
+      <!-- modal subtitle -->
+      <div class="text-[13px] font-semibold mt-[22px] flex justify-between items-center w-[75%] text-light-grey-4">
         <span class="uppercase text-[#344563]">${subtitle[0]}</span>
         <span class="h-[10px] w-[10px] bg-light-grey rounded-full"></span>
         <span class="capitalize">${subtitle[1]}</span>
@@ -143,7 +144,7 @@ projectsList.forEach((project, index_) => {
         <span>${subtitle[2]}</span>
       </div>
 
-      <img class="mt-[12px]" src="./img/desktop/project-1.jpg"/>
+      <img class="mt-[20px]" src=${featuredImage} alt="project image"/>
 
       <p class="mt-[12px] text-[15px] text-[#344563] leading-6">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -157,6 +158,22 @@ projectsList.forEach((project, index_) => {
         <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[1]}</span>
         <span class="text-light-blue ml-[8px] text-xs px-3 py-1 bg-faded-blue rounded-lg">${technologies[2]}</span>
       </div>
+
+      <ul class="flex mt-[49px]">
+       <li class="flex justify-between items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px]">
+        <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
+        <a>
+          <img class="ml-[13px]" src="./img/see-live.png"/>
+        </a>
+       </li>
+
+       <li class="flex justify-between items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px] ml-[14px]">
+        <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
+        <a>
+          <img class="ml-[13px]" src="./img/github-modal.png"/>
+        </a>
+       </li>
+      </ul>
 
     </div>
   </div>
