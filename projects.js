@@ -126,7 +126,10 @@ projectsList.forEach((project, index_) => {
   </div>
 
   <!-- modal -->
-  <div class="border-2 hidden absolute border-red-700 h-[300px] modal w-[full]">
+  <div class="border-2 cursor-pointer hidden absolute border-red-700 h-[300px] modal w-[full]">
+    <div class='close-popup text-red-700 text-xl'>
+    x
+    </div>
     <h3>${name}</h3>
     <p>${description}</p>
     <button>${button}</button>
@@ -136,11 +139,12 @@ projectsList.forEach((project, index_) => {
 
 const openPopupButtons = document.querySelectorAll('.open-popup-btn');
 const modals = document.querySelectorAll('.modal');
-
-//console.log(modals[0]);
+const closePopupBtn = document.querySelector('.close-popup');
 
 openPopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    modals[index].classList.toggle('hidden');
+    modals[index].classList.remove('hidden');
   });
 });
+
+
