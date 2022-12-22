@@ -12,6 +12,10 @@
   animation-timing-function: ease-in-out;
 }
 
+.error {
+  border: 2px solid #e74c3c;
+}
+
 @keyframes logo-animation {
   from {
     transform: rotate(0deg);
