@@ -63,10 +63,10 @@
 
 @media screen and (min-width: 768px) {
   .modal-wrapper {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     padding: 5rem 9rem;
+    z-index: 100;
   }
 
   .modal-content {

@@ -75,7 +75,7 @@ projectsList.forEach((project) => {
     modalButtons,
   } = project;
   projectsContainer.innerHTML += ` 
-  <div id=${id} class="project w-[100%] z-0 p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
+  <div id=${id} class="project w-[100%] p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
 >
   <!--* project image -->
   <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
@@ -146,7 +146,7 @@ projectsList.forEach((project) => {
   </div>
 
   <!-- modal -->
-  <div class="z-50 hidden modal-wrapper absolute top-[${window.scrollY}px] left-0">
+  <div class="z-10 md:z-50 hidden modal-wrapper absolute top-[${window.scrollY}px] left-0">
     <div class="modal-content bg-white z-10 rounded-2xl py-[18px] px-4">
       <header class='flex justify-between items-center'>
         <h3 class="font-bold text-[32px] self-end">${name}</h3>
