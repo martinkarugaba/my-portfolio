@@ -11,6 +11,11 @@ const projectsList = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
     technologies: ['html', 'css', 'javascript'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalDescription:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    modalButtons: ['see live', 'see source'],
   },
   {
     id: 1,
@@ -21,6 +26,11 @@ const projectsList = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
     technologies: ['html', 'css', 'javascript'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalButtons: ['see live', 'see source'],
+    modalDescription:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     id: 2,
@@ -31,16 +41,24 @@ const projectsList = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
     technologies: ['html', 'css', 'javascript'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalButtons: ['see live', 'see source'],
+    modalDescription:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     id: 3,
     name: 'Tonic',
     subtitle: ['canopy', 'back end dev', '2015'],
     featuredImage: './img/desktop/project-4.jpg',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
     technologies: ['html', 'css', 'javascript'],
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalButtons: ['see live', 'see source'],
+    modalDescription:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 ];
 
@@ -53,9 +71,11 @@ projectsList.forEach((project) => {
     description,
     button,
     technologies,
+    modalDescription,
+    modalButtons,
   } = project;
   projectsContainer.innerHTML += ` 
-  <div id=${id} class="project w-[100%] z-10 p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
+  <div id=${id} class="project w-[100%] z-0 p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
 >
   <!--* project image -->
   <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
@@ -126,7 +146,7 @@ projectsList.forEach((project) => {
   </div>
 
   <!-- modal -->
-  <div class="z-20 hidden modal-wrapper">
+  <div class="z-50 hidden modal-wrapper absolute top-[${window.scrollY}px] left-0">
     <div class="modal-content bg-white z-10 rounded-2xl py-[18px] px-4">
       <header class='flex justify-between items-center'>
         <h3 class="font-bold text-[32px] self-end">${name}</h3>
@@ -151,10 +171,7 @@ projectsList.forEach((project) => {
       <div class="modal__bottom-section md:flex">
         <div class="text-wrapper">
           <p class="mt-[12px] text-[15px] text-[#344563] leading-6">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+            ${modalDescription}
           </p>
         </div>
 
@@ -166,16 +183,16 @@ projectsList.forEach((project) => {
           </div>
 
           <!-- modal buttons -->
-          <ul class="flex mt-[49px] modal-buttons">
-            <li class="flex justify-between md:cursor-pointer items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px]">
-              <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
-              <a>
+          <ul class="mt-[49px] modal-buttons w-full flex justify-between ">
+            <li class=" md:cursor-pointer items-center rounded-lg border border-[#6070FF] py-[20px] px-[22px]">
+              <a class="text-[15px] font-medium flex justify-between text-[#396DF2] w-[136px]">
+                <span class="capitalize">${modalButtons[0]}</span> 
                 <img class="ml-[13px]" src="./img/see-live.png"/>
               </a>
             </li>
-            <li class="flex justify-between md:cursor-pointer items-center rounded-lg border border-[#6070FF] py-[14px] px-[22px] ml-[14px]">
-              <span class="text-[15px] text-[#396DF2] font-medium">See live</span>
-              <a>
+            <li class=" md:cursor-pointer  rounded-lg border border-[#6070FF] py-[20px] px-[22px] ml-[14px]">
+              <a class="text-[15px] font-medium flex justify-between items-center text-[#396DF2] w-[136px]">
+                <span class="capitalize">${modalButtons[1]}</span> 
                 <img class="ml-[13px]" src="./img/github-modal.png"/>
               </a>
             </li>
@@ -195,7 +212,6 @@ const closePopupButons = document.querySelectorAll('.close-popup');
 openPopupButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     modals[index].classList.add('show-modal');
-    window.scrollTo(0, 0);
   });
 });
 

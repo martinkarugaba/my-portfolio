@@ -557,6 +557,10 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
 }
@@ -567,6 +571,22 @@ video {
 
 .left-0{
   left: 0px;
+}
+
+.top-\[\]{
+  top: ;
+}
+
+.top-\[\$\]{
+  top: $;
+}
+
+.top-\[\$wind\]{
+  top: $wind;
+}
+
+.top-\[\$\{\}\]{
+  top: ${};
 }
 
 .z-10{
@@ -581,8 +601,8 @@ video {
   z-index: -10;
 }
 
-.z-20{
-  z-index: 20;
+.z-0{
+  z-index: 0;
 }
 
 .my-\[6px\]{
@@ -808,6 +828,42 @@ video {
 
 .w-\[10px\]{
   width: 10px;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[136\]{
+  width: 136;
+}
+
+.w-\[136px\]{
+  width: 136px;
+}
+
+.w-\[13px\]{
+  width: 13px;
+}
+
+.w-\[120px\]{
+  width: 120px;
+}
+
+.w-\[px\]{
+  width: px;
+}
+
+.w-\[113px\]{
+  width: 113px;
+}
+
+.w-\[1px\]{
+  width: 1px;
 }
 
 .cursor-pointer{
@@ -1071,6 +1127,11 @@ video {
 .px-\[22px\]{
   padding-left: 22px;
   padding-right: 22px;
+}
+
+.py-\[20px\]{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pt-\[35px\]{
