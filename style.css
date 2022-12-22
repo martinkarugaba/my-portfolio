@@ -12,6 +12,10 @@
   animation-timing-function: ease-in-out;
 }
 
+.error {
+  border: 2px solid #e74c3c;
+}
+
 @keyframes logo-animation {
   from {
     transform: rotate(0deg);
@@ -61,15 +65,6 @@
 .image-wrapper {
   width: 100%;
 }
-
-.error{
-  border: 2px solid #2ecc71;
-}
-
-.success {
-  border: 2px solid #2ecc71;
-}
-
 
 @media screen and (min-width: 768px) {
   .modal-wrapper {
