@@ -1,31 +1,6 @@
 # my-portfolio
 
 <a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -38,7 +13,6 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -48,9 +22,7 @@ After you're finished please remove all the comments and instructions!
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 [my-portfolio] <a name="about-project"></a>
+# 📖 [About the Project] <a name="about-project"></a>
 
 
 **[my portfolio]** is a project that displays the projects that I have previously worked on.
@@ -73,26 +45,29 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<!-- Features -->
+<details>
+  <summary>Interactivity</summary>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/">JavaScript</a></a></li>
+  </ul>
+</details>
 
 ### Key Features <a name="key-features"></a>
 
-- **[Navbar]**
-- **[Header]**
-- **[Projects]**
+- **[Projects-Section]**
+- A list of projects that I have worked on, click on the see details button to see more information about the project.
+
 - **[Contact-form]**
+- Do you have any query, would you like to collaborate on a project, fill the contact form and and submit and let's talk. It comes direct to me.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://martinkarugaba-my-porfolio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -117,9 +92,6 @@ Install this project with:
 ```cd my-portfolio
 npm install
 ```
-
-<!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Martin Karugaba**
@@ -143,17 +115,7 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!--## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Projects]**
-- [ ] **[Contact]**
-- [ ] **[Footer]**-->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -162,8 +124,6 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -195,7 +155,6 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
