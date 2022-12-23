@@ -68,6 +68,7 @@ projectsList.forEach((project) => {
     modalDescription,
     modalButtons,
   } = project;
+  
   projectsContainer.innerHTML += `
   <div id=${id} class="project w-[100%] p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
 >

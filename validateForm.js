@@ -1,7 +1,7 @@
 const contactForm = document.querySelector('.contact-form');
-const email = document.querySelector('#email');
 const errorContainer = document.querySelector('small');
 
+// hadle submit
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
@@ -11,3 +11,4 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.submit();
   }
 });
+
