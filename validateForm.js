@@ -6,7 +6,7 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
     email.classList.add('error');
-    errorContainer.classList.remove('hidden');
+    errorontainer.classList.remove('hidden');
   } else {
     contactForm.submit();
   }

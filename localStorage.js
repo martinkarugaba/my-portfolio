@@ -1,7 +1,7 @@
 //const contactForm = document.querySelector('.form-action');
 const error = document.querySelector('small');
 const formInput = document.querySelectorAll('.form-data');
-const email = document.querySelector('#email');
+const email = document.querySelector('email');
 
 let form = {
   fullName: formInput[0].value,
