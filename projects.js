@@ -4,9 +4,9 @@ const projectsContainer = document.querySelector('.projects-section');
 const projectsList = [
   {
     id: 0,
-    name: 'Tonic',
-    subtitle: ['canopy', 'back end dev', '2015'],
-    featuredImage: './img/desktop/project-1.jpg',
+    name: 'Mozilla Global Dev Summit 2023',
+    subtitle: ['javascript', 'front end dev', '2023'],
+    featuredImage: './img/projects/mozilla_dev_summit.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     button: 'see project',
@@ -14,6 +14,10 @@ const projectsList = [
     modalDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     modalButtons: ['see live', 'see source'],
+    projectUrls: [
+      'https://module1capstone.netlify.app/',
+      'https://github.com/martinkarugaba/microverse-module-1-capstone',
+    ],
   },
   {
     id: 1,
@@ -27,6 +31,10 @@ const projectsList = [
     modalButtons: ['see live', 'see source'],
     modalDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectUrls: [
+      'https://module1capstone.netlify.app/',
+      'https://github.com/martinkarugaba/microverse-module-1-capstone',
+    ],
   },
   {
     id: 2,
@@ -40,6 +48,10 @@ const projectsList = [
     modalButtons: ['see live', 'see source'],
     modalDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectUrls: [
+      'https://module1capstone.netlify.app/',
+      'https://github.com/martinkarugaba/microverse-module-1-capstone',
+    ],
   },
   {
     id: 3,
@@ -53,6 +65,10 @@ const projectsList = [
     modalButtons: ['see live', 'see source'],
     modalDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    projectUrls: [
+      'https://module1capstone.netlify.app/',
+      'https://github.com/martinkarugaba/microverse-module-1-capstone',
+    ],
   },
 ];
 
@@ -67,6 +83,7 @@ projectsList.forEach((project) => {
     technologies,
     modalDescription,
     modalButtons,
+    projectUrls,
   } = project;
   projectsContainer.innerHTML += `
   <div id=${id} class="project w-[100%] p-4 z-2 md:p-[24px] border md:order-1 md:h-[496px] md:gap-x-[2.9rem] border-light-grey-2 bg-white rounded-2xl flex flex-col md:flex-row justify-center items-center"
@@ -74,7 +91,7 @@ projectsList.forEach((project) => {
   <!--* project image -->
   <div class="w-full md:w-[50%] h-[50%] md:h-full bg-white">
     <img
-      class="w-full h-full object-cover md:hover:scale-110 transition duration-700 ease-in-out"
+      class="w-full h-full object-contain md:hover:scale-110 transition duration-700 ease-in-out"
       src=${featuredImage}
       alt="project-1"
     />
@@ -179,13 +196,13 @@ projectsList.forEach((project) => {
           <!-- modal buttons -->
           <ul class="mt-[49px] modal-buttons w-full flex justify-between ">
             <li class=" md:cursor-pointer items-center rounded-lg border border-[#6070FF] py-[20px] px-[22px]">
-              <a class="text-[15px] font-medium flex justify-between text-[#396DF2] w-[136px]">
+              <a class="text-[15px] font-medium flex justify-between text-[#396DF2] w-[136px]" href=${projectUrls[0]} target="_blank">
                 <span class="capitalize">${modalButtons[0]}</span> 
                 <img class="ml-[13px]" src="./img/see-live.png"/>
               </a>
             </li>
-            <li class=" md:cursor-pointer  rounded-lg border border-[#6070FF] py-[20px] px-[22px] ml-[14px]">
-              <a class="text-[15px] font-medium flex justify-between items-center text-[#396DF2] w-[136px]">
+            <li class=" md:cursor-pointer  rounded-lg border border-[#6070FF] py-[20px] px-[22px] ml-[14px]" >
+              <a class="text-[15px] font-medium flex justify-between items-center text-[#396DF2] w-[136px]" href=${projectUrls[1]} target="_blank">
                 <span class="capitalize">${modalButtons[1]}</span> 
                 <img class="ml-[13px]" src="./img/github-modal.png"/>
               </a>
